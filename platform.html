@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,m aximum-scale=1, user-scalable=no" >
+    <meta name="description" content="Plataforma de gestión de Calle 30 en pruebas">
+    <meta name="keywords" content="Plataforma, Gestión, Calle 30, BIM, GIS, Gemelo Digital">
+    <title> Plataforma de gestión Calle 30 </title>
+    <!-- Favicon icon -->
+    <link rel="icon" href="resources/images/favicon-32x32.png" type="image/png">
+    <!-- Style.css -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://js.arcgis.com/4.26/esri/themes/light/main.css">
+    <link rel="stylesheet" href="https://developer.api.autodesk.com/modelderivative/v2/viewers/7.*/style.min.css" type="text/css">
+    <link rel="stylesheet" href="styles/platform.css" type="text/css">
+    <!-- Scripts -->
+    <!--script defer type="text/javascript" src="scripsts/script.js"></script-->
+    <script src="https://js.arcgis.com/4.26/"></script>
+    <script defer type="text/javascript" src="scripsts/platform.js"></script>
+    <!-- <script src="https://developer.api.autodesk.com/modelderivative/v2/viewers/7.*/viewer3D.min.js"></script> -->
+
+</head>
+<body id="body">
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <div id="logo_icon"><img src="resources/icons/icon.svg"></div>
+                <div id="logo_name">Plataforma de gestión Calle30</div>                
+            </div>
+            <span class="material-icons" id="btn">menu</span>
+            <span class="material-icons" id="btn_open">menu_open</span>
+        </div>
+        <div class="first_menu">
+            <ul>
+                <li>
+                    <form action="" method="get">
+                        <span class="material-icons" id="bx-search">search</span>
+                        <input type="text" placeholder="buscar...">
+                    </form>
+                    <span class="tooltip">buscador</span>
+                </li>
+                <li>
+                    <a href="#" onclick="showVisor()">
+                        <span class="material-icons">map</span>
+                        <span class="links_name">Visor</span>
+                    </a>
+                    <span class="tooltip">Visor</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="material-icons">extension</span>
+                        <span class="links_name">Inventario</span>
+                    </a>
+                    <span class="tooltip">Inventario</span>
+                </li>
+                <li>
+                    <a href="#" onclick="showPanel()">
+                        <span class="material-icons">query_stats</span>
+                        <span class="links_name">Indicadores</span>
+                    </a>
+                    <span class="tooltip">Indicadores</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="material-icons">traffic</span>
+                        <span class="links_name">Tráfico</span>
+                    </a>
+                    <span class="tooltip">Tráfico</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="material-icons">warning_amber</span>
+                        <span class="links_name">Incidencias</span>
+                    </a>
+                    <span class="tooltip">Incidencias</span>
+                </li>
+            </ul>
+        </div>
+        <div class="second_menu">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="material-icons">info_outline</span>
+                        <span class="links_name">Información</span>
+                    </a>
+                    <span class="tooltip">Información</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="material-icons">help_outline</span>
+                        <span class="links_name">Contacto</span>
+                    </a>
+                    <span class="tooltip">Contacto</span>
+                </li>
+            </ul>
+        </div>    
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <!--<img src="profile.jpg" alt="">-->
+                    <span class="material-icons">account_circle</span>                 
+                    <div class="name_job">
+                        <div id="name">Jorge Jerez</div>
+                        <div id="job">Administrador</div>
+                    </div>
+                </div>
+                <a href="login.html"><span class="material-icons" id="log_out">logout</span></a>
+            </div>
+        </div>
+    </div>
+    <div class="main_content">
+        <div id="text">Visor GIS</div>
+        <div id="viewDiv"></div>
+        <!--div id="forgeViewer"></div-->
+        <!-- <input type="text" id="searchInput" placeholder="Ingrese un valor">
+            <button onclick="searchObject()">Buscar</button>
+        <div id="searchResultContainer"></div>
+        <div>
+            <p><b> Capa: </b><div id="layerNameContainer"></div></p>
+            <p><b> ID único: </b><div id="objectIdDiv"></div></p>           
+        </div> -->
+        <div id="panelPowerBI">
+            <iframe title="Report Section" src="https://app.powerbi.com/view?r=eyJrIjoiMjEyN2I1MDctZTRkMi00ZDIwLWJhNjYtNWQ4NWNkMWMxYzk0IiwidCI6IjZhZmVhODVkLWMzMjMtNDI3MC1iNjlkLWE0ZmIzOTI3YzI1NCIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
+        </div>
+    </div>
+</body>
+</html>
