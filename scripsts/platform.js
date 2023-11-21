@@ -20,18 +20,40 @@ searchBTn.onclick = function(){
     sidebar.classList.toggle("active");
 }
 function showPanel(){
-  const panel= document.getElementById("panelPowerBI")
+  const panel= document.getElementById("PbI_Indicadores");
   panel.style.display= "block";
-  const arcgis= document.getElementById("viewDiv")
+  const arcgis= document.getElementById("viewDiv");
   arcgis.style.display= "none";
+  const text = document.getElementById("text");
+  text.style.display = "none"
+
 }
 
-function showVisor(){
-  const panel= document.getElementById("panelPowerBI")
-  panel.style.display= "none";
-  const arcgis= document.getElementById("viewDiv")
-  arcgis.style.display= "block";
+
+function active_panel  (ide) {
+    
+    var padre = document.getElementById("contenedor");
+    var elementosHijosDiv = padre.children;
+
+    for (var i = 0; i < elementosHijosDiv.length; i++) {
+           elementosHijosDiv[i].style.display = "none";
+           
+    }
+    var elemento = document.getElementById(ide);
+    elemento.style.display="block"
+    
 }
+
+
+
+
+
+// function showVisor(){
+//   const panel= document.getElementById("PbI_Indicadores")
+//   panel.style.display= "none";
+//   const arcgis= document.getElementById("viewDiv")
+//   arcgis.style.display= "block";
+// }
 /**
 
 script ArcGIS

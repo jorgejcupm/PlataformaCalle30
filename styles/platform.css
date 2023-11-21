@@ -29,7 +29,7 @@
     --border-radius_1: 3px;
     --border-radius_2: 5px;
     --border-radius_3: 9px;
-    --width_1: calc(100%-75px);
+    --width_1: calc(100% - 75px);
 }
 
 /* cuerpo */
@@ -294,6 +294,7 @@ body{
 
 .main_content {
     position: absolute;
+    background: green;
     height: 100%;
     width: calc(100vw - 75px);
     left: 75px;
@@ -321,7 +322,7 @@ body{
     margin: 0;
     background-color: #F0F8FF;
 } */
-.main_content #panelPowerBI{
+.main_content .contenedor_paneles{
     display: none;
     width: 100%;
     height: 100%;

@@ -44,35 +44,35 @@
                     <span class="tooltip">buscador</span>
                 </li>
                 <li>
-                    <a href="#" onclick="showVisor()">
+                    <a href="index.html" >
                         <span class="material-icons">map</span>
                         <span class="links_name">Visor</span>
                     </a>
                     <span class="tooltip">Visor</span>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#"  onclick="active_panel('PbI_Inventario')">
                         <span class="material-icons">extension</span>
                         <span class="links_name">Inventario</span>
                     </a>
                     <span class="tooltip">Inventario</span>
                 </li>
                 <li>
-                    <a href="#" onclick="showPanel()">
+                    <a href="#" onclick="active_panel('PbI_Indicadores')">
                         <span class="material-icons">query_stats</span>
                         <span class="links_name">Indicadores</span>
                     </a>
                     <span class="tooltip">Indicadores</span>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#" onclick="active_panel('PbI_Trafico')">
                         <span class="material-icons">traffic</span>
                         <span class="links_name">Tráfico</span>
                     </a>
                     <span class="tooltip">Tráfico</span>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#" onclick="active_panel('PbI_Incidencias')">
                         <span class="material-icons">warning_amber</span>
                         <span class="links_name">Incidencias</span>
                     </a>
@@ -112,7 +112,7 @@
             </div>
         </div>
     </div>
-    <div class="main_content">
+    <div  id = "contenedor" class="main_content">
         <div id="text">Visor GIS</div>
         <div id="viewDiv"></div>
         <!--div id="forgeViewer"></div-->
@@ -123,9 +123,46 @@
             <p><b> Capa: </b><div id="layerNameContainer"></div></p>
             <p><b> ID único: </b><div id="objectIdDiv"></div></p>           
         </div> -->
-        <div id="panelPowerBI">
-            <iframe title="Report Section" src="https://app.powerbi.com/view?r=eyJrIjoiMjEyN2I1MDctZTRkMi00ZDIwLWJhNjYtNWQ4NWNkMWMxYzk0IiwidCI6IjZhZmVhODVkLWMzMjMtNDI3MC1iNjlkLWE0ZmIzOTI3YzI1NCIsImMiOjl9" frameborder="0" allowFullScreen="true" class ="panel"></iframe>
+        <div id="PbI_Indicadores" class="contenedor_paneles">
+            <iframe title="Indicadores" class ="panel" src="https://app.powerbi.com/view?r=eyJrIjoiZGI1ZjE4NWYtZGI3NS00YmM0LTlhZDgtYzJjZDY2OTRkNDlhIiwidCI6IjMwNzcxYWRkLTZiMWUtNDAwZS1iZTNiLWU2ZTg1NzhlNjlkMSIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
+            
+
         </div>
+
+
+        <div id="PbI_Inventario" class="contenedor_paneles">
+            
+            
+
+            <iframe title="Inventario" class ="panel" src="https://app.powerbi.com/view?r=eyJrIjoiNzE1MzU0ZjYtYjg1Ni00ZTNkLWJhMTYtZmQ0OWU3NWQ5ODc4IiwidCI6IjMwNzcxYWRkLTZiMWUtNDAwZS1iZTNiLWU2ZTg1NzhlNjlkMSIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
+
+        </div>    
+        
+        <div id="PbI_Trafico" class="contenedor_paneles">
+            
+            
+
+            <iframe title="trafico" class ="panel" src="https://app.powerbi.com/view?r=eyJrIjoiNTZkMGVhYTgtYzFlZC00YmUzLTg1OWUtZjEzMGRiNjAxYjJkIiwidCI6IjMwNzcxYWRkLTZiMWUtNDAwZS1iZTNiLWU2ZTg1NzhlNjlkMSIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
+
+        </div>
+
+
+        <div id="PbI_Incidencias" class="contenedor_paneles">
+            
+            
+
+        </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
     </div>
 </body>
 </html>
