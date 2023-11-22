@@ -308,11 +308,11 @@ body{
     font-weight: 500;
     color: black;
     background: var(--color_1);
-    margin: 0px 2px;
+    
     height: 50px;
-    width: calc(100vw - 79px);
+
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 50% 45%;
 }
 
 #logo_header{
@@ -323,13 +323,19 @@ body{
 
 #titulo{
     color: var(--color_3) ;
+    font-family: 'console';
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: flex-end;
+    margin-top: 4px;
 }
 
 
 .main_content #viewDiv {
     width: 100%;
-    height: 100%;
-    margin: 4px;
+    height: 92%;
+    
 /*    margin-top:2px;*/
 }
 /* .main_content #forgeViewer {
