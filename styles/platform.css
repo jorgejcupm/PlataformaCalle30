@@ -323,18 +323,20 @@ body{
 
 #titulo{
     color: var(--color_3) ;
-    font-family: 'console';
+    font-family: 'consolas';
     display: flex;
+    font-size: 24px;
     flex-direction: row;
     justify-content: flex-end;
     align-content: flex-end;
     margin-top: 4px;
+    line-height: 46px;
 }
 
 
 .main_content #viewDiv {
     width: 100%;
-    height: 92%;
+    height: 93%;
     
 /*    margin-top:2px;*/
 }
