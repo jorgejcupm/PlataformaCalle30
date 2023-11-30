@@ -21,9 +21,10 @@
     --text-size_3:20px;
     --text-size_4:25px;
     --text-size_5:30px;
-    --color_1: #459cbf;
+/*    --color_1: #459cbf;*/
+    --color_1: #456AAB;
     --color_2: #ade2fd;
-    --color_3: #464646;
+    --color_3: white;
     --color_4: #8a8a8a;
     --box-shadow_1: 0 5px 10px rgba(0,0,0,0.2);
     --border-radius_1: 3px;
@@ -149,7 +150,7 @@ body{
     height: 35px;
     width: 100px;
     background: var(--color_2);
-    color: var(--color_3);
+    color: var(--color_4);
     line-height: 35px;
     font-size: var(--text-size_2);
     text-align: center;
@@ -294,7 +295,6 @@ body{
 
 .main_content {
     position: absolute;
-    background: green;
     height: 100%;
     width: calc(100vw - 75px);
     left: 75px;
@@ -307,14 +307,38 @@ body{
     font-size: var(--text-size_4);
     font-weight: 500;
     color: black;
-    margin-top: 15px;
-    margin-left: 1500px;
-    width: 800px;
+    background: var(--color_1);
+    
+    height: 50px;
+
+    display: grid;
+    grid-template-columns: 50% 45%;
 }
+
+#logo_header{
+    height: 46px;
+    margin-left: 15px;
+    margin-top: 4px;
+}
+
+#titulo{
+    color: var(--color_3) ;
+    font-family: 'consolas';
+    display: flex;
+    font-size: 24px;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: flex-end;
+    margin-top: 4px;
+    line-height: 46px;
+}
+
+
 .main_content #viewDiv {
     width: 100%;
-    height: 500px;
-    margin: 0;
+    height: 93%;
+    
+/*    margin-top:2px;*/
 }
 /* .main_content #forgeViewer {
     width: 100%;
